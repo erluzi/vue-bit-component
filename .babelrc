@@ -1,0 +1,11 @@
+{
+  "presets": ["env"],
+  "plugins": ["transform-runtime", "transform-vue-jsx"],
+  "ignore": [],
+  "env": {
+    "production": {
+      "plugins": []
+    }
+  },
+  "comments": false
+}
