@@ -4,8 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import Compo from '../src/index';
-Vue.use(Compo);
+// method 1: 引入全部组件
+// import Compo from '../src/index';
+// Vue.use(Compo);
+
+// method 2: 引入部分组件
+import { Button } from '../src/index';
+Vue.use(Button);
 
 Vue.config.productionTip = false;
 
