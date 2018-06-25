@@ -29,5 +29,27 @@
   "dependencies": {
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
-  }
+  },
+  "name": "vue-zj",
+  "version": "1.0.0",
+  "description": "some vue components",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erluzi/vue-zj.git"
+  },
+  "keywords": [
+    "vue",
+    "components"
+  ],
+  "author": "erluzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erluzi/vue-zj/issues"
+  },
+  "homepage": "https://github.com/erluzi/vue-zj#readme"
 }
