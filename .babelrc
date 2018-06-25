@@ -1,6 +1,6 @@
 {
   "presets": ["env"],
-  "plugins": ["transform-runtime", "transform-vue-jsx"],
+  "plugins": ["transform-runtime"],
   "ignore": [],
   "env": {
     "production": {
