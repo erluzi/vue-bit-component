@@ -4,6 +4,8 @@ yarn.lock
 yarn-error.log
 
 build
+example
+.babelrc
 .gitignore
 .npmignore
 components.json
