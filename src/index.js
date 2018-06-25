@@ -1,6 +1,6 @@
 import Button from '../package/button/index.js';
 
-// need register
+// for register
 const components = [
     Button
 ];

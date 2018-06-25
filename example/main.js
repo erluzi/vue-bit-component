@@ -9,7 +9,11 @@ import router from './router'
 // Vue.use(Compo);
 
 // method 2: 引入部分组件
-import { Button } from '../src/index';
+// import { Button } from '../src/index';
+// Vue.use(Button);
+
+// method 3: 从库引入组件
+import { Button } from '../lib/index';
 Vue.use(Button);
 
 Vue.config.productionTip = false;
