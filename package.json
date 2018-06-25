@@ -26,8 +26,10 @@
     "clean": "rimraf lib",
     "dist": "npm run clean && webpack --config build/webpack.component.js && webpack --config build/webpack.common.js"
   },
+  "peerDependencies": {
+    "vue": "^2.5.16"
+  },
   "dependencies": {
-    "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
   "name": "vue-bit-component",
