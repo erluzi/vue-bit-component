@@ -5,6 +5,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
     "json-loader": "^0.5.7",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
@@ -21,10 +22,12 @@
     "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.js",
     "clean": "rimraf lib",
     "dist": "npm run clean && webpack --config build/webpack.component.js && webpack --config build/webpack.common.js"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
   }
 }

@@ -7,7 +7,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const webpackConfig = {
     output: {
         path: path.resolve(process.cwd(), './lib'),
-        publicPath: '/dist/',
+        publicPath: '/lib/',
         filename: '[name].js',
         chunkFilename: '[id].js',
         libraryTarget: 'commonjs2'
@@ -43,7 +43,7 @@ const webpackConfig = {
             {
                 test: /\.less$/,
                 loaders: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
-            },
+            }
         ]
     },
     plugins: [
