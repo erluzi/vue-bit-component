@@ -3,6 +3,6 @@
 </template>
 <script>
     export default {
-        name: 'ERButton'
+        name: 'ErButton'
     }
 </script>

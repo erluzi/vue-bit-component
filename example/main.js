@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Compo from '../src/index';
+Vue.use(Compo);
+
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

@@ -1,5 +1,7 @@
 <template>
-    <div>Home</div>
+    <div>
+        <er-button></er-button>
+    </div>
 </template>
 <script>
     export default {
