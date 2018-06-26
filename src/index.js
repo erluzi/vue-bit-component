@@ -10,6 +10,7 @@ function install(Vue, opts = {}) {
     for(let component of components){
         Vue.component(component.name, component)
     }
+    Vue.use(Loader.loaderDirective);
 }
 
 if(typeof window !== 'undefined' && window.Vue){

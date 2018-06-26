@@ -12,12 +12,13 @@ import '../src/less/index.less'
 // Vue.use(Compo);
 
 // method 2: 引入部分组件
-// import { Button } from '../src/index';
-// Vue.use(Button);
+import { Button, Loader } from '../src/index';
+Vue.use(Button);
+Vue.use(Loader.loaderDirective);
 
 // method 3: 从库引入组件
-import { Button } from '../lib/index';
-Vue.use(Button);
+// import { Button } from '../lib/index';
+// Vue.use(Button);
 
 Vue.config.productionTip = false;
 

@@ -1,6 +1,9 @@
 <template>
     <div>
-        <button @click="start()">loader full start</button>
+        <div>
+            <button @click="start()">loader full start</button>
+        </div>
+
         <div>
             <button @click="start(1)">loader1 start</button>
             <button @click="stop(1)">loader1 stop</button>
@@ -8,11 +11,20 @@
                 box loader 1
             </div>
         </div>
+
         <div>
             <button @click="start(2)">loader2 start</button>
             <button @click="stop(2)">loader2 stop</button>
             <div class="box-loader loader2">
                 box loader 2
+            </div>
+        </div>
+
+        <div>
+            <button @click="loader3 = true">loader3 start</button>
+            <button @click="loader3 = false">loader3 stop</button>
+            <div class="box-loader loader3" v-erloader="loader3">
+                box loader 3
             </div>
         </div>
     </div>
@@ -24,7 +36,8 @@
         data(){
             return{
                 loader1: null,
-                loader2: null
+                loader2: null,
+                loader3: true
             }
         },
         methods: {

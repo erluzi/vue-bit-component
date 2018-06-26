@@ -1,4 +1,5 @@
 import Loader from './loader.vue';
+import loaderDirective from './directive.js';
 import Vue from 'vue';
 
 let LoaderConstructor = Vue.extend(Loader);
@@ -52,5 +53,5 @@ function close() {
 }
 
 export default {
-    loading, close
+    loading, close, loaderDirective
 }
