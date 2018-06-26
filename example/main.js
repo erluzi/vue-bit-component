@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 
 import './less/example.less'
-import '../package/less/index.less'
+import '../src/less/index.less'
 
 // method 1: 引入全部组件
 // import Compo from '../src/index';
