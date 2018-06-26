@@ -1,0 +1,44 @@
+.loading-fade-enter,
+.loading-fade-leave-active{
+  opacity: 0;
+}
+
+@keyframes spi {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+
+}
+.loading-full{
+  transition: opacity .2s linear;
+  .indicator-wrapper{
+    padding: .5rem;
+    position: absolute;
+    z-index: 61;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.7);
+    border-radius: 5px;
+    .spinner{
+      width: .8rem;
+      height: .8rem;
+      border-radius: 50%;
+      border: 4px solid;
+      border-color: rgb(204,204,204) rgb(204,204,204) rgb(204,204,204) transparent;
+      animation: spi .8s infinite linear;
+    }
+  }
+  .mask-wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 60;
+  }
+}

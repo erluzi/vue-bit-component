@@ -1,4 +1,5 @@
 import Button from '../package/button/index.js';
+import Loader from '../package/loader/index.js';
 
 // for register
 const components = [
@@ -17,7 +18,8 @@ if(typeof window !== 'undefined' && window.Vue){
 
 module.exports = {
     install,
-    Button
+    Button,
+    Loader
 };
 
 module.exports.default = module.exports;
