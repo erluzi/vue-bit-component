@@ -35,7 +35,7 @@
     "vue-router": "^3.0.1"
   },
   "name": "vue-bit-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "some vue components",
   "main": "lib/index.js",
   "directories": {
