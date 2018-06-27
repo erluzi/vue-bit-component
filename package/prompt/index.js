@@ -2,13 +2,12 @@ import Vue from 'vue';
 import Prompt from './prompt.vue';
 
 let PromptConstructor = Vue.extend(Prompt);
-let promptInstance, confirmInstance, confirm_Instance;
 let promptTimer;
 
 const instanceMapping = {
-    prompt: promptInstance,
-    confirm: confirmInstance,
-    confirm_: confirm_Instance,
+    prompt: undefined,
+    confirm: undefined,
+    confirm_: undefined,
 };
 
 function atomFunc(opts, type) {
@@ -61,16 +60,15 @@ function confirm_(opts = {}) {
 }
 
 function close() {
-    if(promptInstance !== undefined){
-        promptInstance.$el &&
-        promptInstance.$el.parentNode &&
-        promptInstance.$el.parentNode.removeChild(promptInstance.$el)
+    let instance;
+    for(let type in instanceMapping){
+        instance = instanceMapping[type];
+        if(instance && instance.domInserted){
+            instance.$el.parentNode.removeChild(instance.$el);
+            instance.domInserted = false
+        }
     }
-    if(confirmInstance !== undefined){
-        confirmInstance.$el &&
-        confirmInstance.$el.parentNode &&
-        confirmInstance.$el.parentNode.removeChild(confirmInstance.$el)
-    }
+    // document.querySelector('.box-mask').remove()
 }
 
 function install(Vue) {

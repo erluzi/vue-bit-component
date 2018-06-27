@@ -1,19 +1,22 @@
 <template>
     <div>
         <div>
-            <button @click="prompt">test prompt</button>
+            <button @click="prompt">prompt</button>
         </div>
         <div>
-            <button @click="confirm">test confirm</button>
-            <button @click="confirm(2)">test confirm2</button>
+            <button @click="confirm">confirm</button>
+            <button @click="confirm(2)">confirm2</button>
         </div>
         <div>
-            <button @click="confirm_">test confirm_</button>
+            <button @click="confirm_">confirm_</button>
+        </div>
+        <div>
+            <button @click="close">close</button>
         </div>
     </div>
 </template>
 <script>
-
+    import {Prompt} from '../../../src/index';
     export default {
         name: 'TPrompt',
         data(){
@@ -53,6 +56,9 @@
                     callback: () => console.log(this.message),
                     cancelFunc: () => console.log('canceled')
                 });
+            },
+            close(){
+                Prompt.close()
             }
         }
     }
