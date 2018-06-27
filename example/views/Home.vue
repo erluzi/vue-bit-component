@@ -2,6 +2,7 @@
     <div>
         <router-link :to="{name: 'TButton'}">TButton</router-link>
         <router-link :to="{name: 'TLoader'}">TLoader</router-link>
+        <router-link :to="{name: 'TPrompt'}">TPrompt</router-link>
     </div>
 </template>
 <script>

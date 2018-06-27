@@ -52,6 +52,10 @@ function close() {
     }
 }
 
+function install(Vue) {
+    Vue.use(loaderDirective)
+}
+
 export default {
-    loading, close, loaderDirective
+    loading, close, install
 }

@@ -8,13 +8,13 @@ import './less/example.less'
 import '../src/less/index.less'
 
 // method 1: 引入全部组件
-// import Compo from '../src/index';
-// Vue.use(Compo);
+import Compo from '../src/index';
+Vue.use(Compo);
 
 // method 2: 引入部分组件
-import { Button, Loader } from '../src/index';
-Vue.use(Button);
-Vue.use(Loader.loaderDirective);
+// import { Button, Loader } from '../src/index';
+// Vue.use(Button);
+// Vue.use(Loader);
 
 // method 3: 从库引入组件
 // import { Button } from '../lib/index';
