@@ -23,7 +23,7 @@
 </template>
 <script>
     export default {
-        name: 'prompt',
+        name: 'ErPrompt',
         data(){
             return{
                 visible: false,
