@@ -7,6 +7,7 @@ build
 example
 .babelrc
 postcss.config.js
+readme.md
 .gitignore
 .npmignore
 components.json
