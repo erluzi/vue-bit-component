@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>PageSynthesis</p>
+        <p @click="to2">PageSynthesis</p>
         <div class="el-root"></div>
     </div>
 </template>
@@ -30,11 +30,22 @@
     export default {
         name: 'PageSynthesis',
         created(){
-
+            // todo : get mockData from remote server
+            console.log('PageSynthesis created')
         },
         mounted(){
             //want: Page.synthesis([{}, {}])
             synthesis(document.querySelector('.el-root'), mockData)
+        },
+        methods:{
+            to2(){
+                this.$router.push({name: 'PageSynthesis', query: {name: 'a'}})
+            }
+        },
+        watch:{
+            $route(){
+                console.log(1)
+            }
         }
     }
 </script>
