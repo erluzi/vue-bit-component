@@ -1,8 +1,8 @@
 // 根据组件合成页面内容
 import Vue from 'vue';
-import A from '../../example/comps/A.vue';
-import B from '../../example/comps/B.vue';
-import C from '../../example/comps/C.vue';
+import A from '../comps/A.vue';
+import B from '../comps/B.vue';
+import C from '../comps/C.vue';
 
 const constructorMapping = {
     a: Vue.extend(A),

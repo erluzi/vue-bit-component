@@ -7,7 +7,7 @@
 <script>
     // git flow feature finish pageSynthesis
 
-    import {synthesis} from '../../../package/pageSynthesis/index'
+    import {synthesis} from '../../utils/pageSynthesis'
 
     const mockData = [
         {
