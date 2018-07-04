@@ -30,7 +30,6 @@
     export default {
         name: 'PageSynthesis',
         created(){
-            // todo : get mockData from remote server
             console.log('PageSynthesis created')
         },
         mounted(){
@@ -39,12 +38,13 @@
         },
         methods:{
             to2(){
-                this.$router.push({name: 'PageSynthesis', query: {name: 'a'}})
+                this.$router.push({name: 'PageSynthesis', query: {name: Math.random()}})
             }
         },
         watch:{
             $route(){
-                console.log(1)
+                // todo : get mockData from remote server
+                console.log(this.$route.query)
             }
         }
     }
