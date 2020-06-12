@@ -72,9 +72,9 @@ function close() {
 }
 
 function install(Vue) {
-  Vue.prototype.$prompt = prompt
-  Vue.prototype.$confirm = confirm
-  Vue.prototype.$confirm_ = confirm_
+  Vue.prototype.$erprompt = prompt
+  Vue.prototype.$erconfirm = confirm
+  Vue.prototype.$erconfirm_ = confirm_
 }
 
 export default {

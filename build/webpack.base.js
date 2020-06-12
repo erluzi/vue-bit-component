@@ -9,7 +9,8 @@ const webpackConfig = {
     path: path.resolve(process.cwd(), './lib'),
     filename: '[name].js',
     chunkFilename: '[id].js',
-    libraryTarget: 'commonjs2',
+    library: 'vbc',
+    libraryTarget: 'umd'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -27,9 +28,6 @@ const webpackConfig = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: {
-          preserveWhitespace: false,
-        },
       },
       {
         test: /\.json$/,

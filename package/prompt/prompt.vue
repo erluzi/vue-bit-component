@@ -1,17 +1,17 @@
 <template>
   <div class="box-mask" v-show="visible">
-    <div class="normalMask" :class="{boxMaskBlack: type !== 'prompt'}" @click="maskClear"></div>
+    <div class="normal-mask" :class="{boxMaskBlack: type !== 'prompt'}" @click="maskClear"></div>
     <template v-if="type === 'prompt'">
       <div class="box-prompt"><p><span>{{message}}</span></p></div>
     </template>
     <template v-else-if="type === 'confirm'">
-      <div class="mask_confirm confirm-yes">
+      <div class="mask-confirm confirm-yes">
         <p><span>{{message}}</span></p>
         <div class="sure" @click="sure">{{confirmText}}</div>
       </div>
     </template>
     <template v-else>
-      <div class="mask_confirm">
+      <div class="mask-confirm">
         <p><span>{{message}}</span></p>
         <div class="btns">
           <div class="btn left" @click="cancel">{{cancelText}}</div>

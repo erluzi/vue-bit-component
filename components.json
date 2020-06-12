@@ -1,3 +1,5 @@
 {
-  "button": "./package/button/index.js"
+  "button": "./package/button/index.js",
+  "prompt": "./package/prompt/index.js",
+  "loader": "./package/loader/index.js"
 }
