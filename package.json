@@ -7,11 +7,11 @@
     "lib"
   ],
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.js",
+    "start": "webpack-dev-server --inline --progress --config build/webpack.dev.js",
     "clean": "rimraf lib",
     "less": "lessc src/less/index.less lib/bitComponent.css",
     "component": "webpack --config build/webpack.component.js && webpack --config build/webpack.common.js",
-    "dist": "npm run clean && npm run component && npm run less"
+    "build": "npm run clean && npm run component && npm run less"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

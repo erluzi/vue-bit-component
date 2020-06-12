@@ -1,5 +1,3 @@
-'use strict'
-const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -9,15 +7,11 @@ module.exports = {
     app: './example/main.js',
   },
   output: {
-    path: path.resolve(process.cwd(), './dist'),
     publicPath: '/',
     filename: '[name].js',
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-    },
   },
   module: {
     rules: [
@@ -31,8 +25,16 @@ module.exports = {
         use: 'babel-loader',
       },
       {
+        test: /\.css$/,
+        use: ['css-loader', 'postcss-loader']
+      },
+      {
         test: /\.less$/,
-        loaders: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
+        use: ['css-loader', 'postcss-loader', 'less-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: ['css-loader', 'postcss-loader', 'sass-loader']
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
