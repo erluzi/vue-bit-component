@@ -14,5 +14,3 @@ Vue.use(Loader);
 ```javascript
 import 'vue-bit-component/lib/bitComponent.css'
 ```
-
-### [使用方式参考example](https://github.com/erluzi/vue-bit-component/tree/master/example/views)

@@ -1,6 +1,6 @@
 <template>
   <transition name="loading-fade">
-    <div class="loading-full" v-show="visible">
+    <div class="er-loader" v-show="visible">
       <div class="indicator-wrapper">
         <div class="spinner"></div>
       </div>

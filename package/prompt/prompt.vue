@@ -1,6 +1,6 @@
 <template>
-  <div class="box-mask" v-show="visible">
-    <div class="normal-mask" :class="{boxMaskBlack: type !== 'prompt'}" @click="maskClear"></div>
+  <div class="er-prompt" v-show="visible">
+    <div class="mask-normal" :class="{'mask-black': type !== 'prompt'}" @click="maskClear"></div>
     <template v-if="type === 'prompt'">
       <div class="box-prompt"><p><span>{{message}}</span></p></div>
     </template>
