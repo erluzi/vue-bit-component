@@ -19,15 +19,12 @@ function install(Vue, opts = {}) {
   Vue.prototype.$erconfirm_ = Prompt.confirm_
 }
 
-// if (typeof window !== 'undefined' && window.Vue) {
-//   install(window.Vue)
-// }
-
-module.exports = {
+export default {
   install,
   Button,
+}
+
+export {
   Loader,
   Prompt,
 }
-
-module.exports.default = module.exports
