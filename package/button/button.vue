@@ -1,8 +1,10 @@
 <template>
-    <button>test</button>
+  <button>
+    <slot></slot>
+  </button>
 </template>
 <script>
-    export default {
-        name: 'ErButton'
-    }
+  export default {
+    name: 'ErButton',
+  }
 </script>
