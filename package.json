@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "clean": "rimraf lib",
-    "less": "lessc src/less/index.less lib/bitComponent.css",
+    "less": "lessc src/less/index.less lib/index_less.css",
+    "sass": "sass src/scss/index.scss lib/index_scss.css --style compressed",
     "component": "webpack --config build/webpack.component.js && webpack --config build/webpack.common.js",
     "build": "npm run clean && npm run component && npm run less"
   },

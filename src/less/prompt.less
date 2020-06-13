@@ -1,4 +1,4 @@
-@messagePadding: 17px;
+@import "_vars";
 @btnPadding: 14px;
 
 .er-prompt{
@@ -17,7 +17,7 @@
     background-color: rgba(0,0,0,.4);
   }
   p{
-    padding: @messagePadding 13px;
+    padding: 17px 13px;
     word-break: break-all;
     >span{
       display: inline-block;
@@ -37,7 +37,7 @@
       border-radius: 10px;
       background-color: #fff;
       line-height: 1.6;
-      color: #ffa800;
+      color: @color-theme;
       box-shadow: 2.7px 5px 10px 1.5px rgba(6, 0, 1, 0.13);
     }
   }
@@ -54,14 +54,14 @@
     overflow: hidden;
     .btns{
       display: flex;
-      border-top: 1px solid #e0e0e0;
-      color: #4792f6;
+      border-top: 1px solid @color-line-gap;
+      color: @color-theme;
     }
     .btn {
       padding: @btnPadding 0;
       width: 50%;
       &.right {
-        border-left: 1px solid #e0e0e0;
+        border-left: 1px solid @color-line-gap;
       }
     }
 
@@ -69,8 +69,8 @@
       .sure{
         //position: relative;
         padding: @btnPadding 0;
-        border-top: 1px solid #e0e0e0;
-        color: #4792f6;
+        border-top: 1px solid @color-line-gap;
+        color: @color-theme;
         //&:before{
         //  content: '';
         //  position: absolute;
