@@ -1,6 +1,6 @@
 {
   "name": "vue-bit-component",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "vue components",
   "main": "lib/index.js",
   "files": [
